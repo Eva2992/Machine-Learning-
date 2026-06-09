@@ -351,7 +351,7 @@ iVBORw0KGgoAAAANSUhEUgAAAAoAAADICAYAAADREnACAAABV0lEQVR4nOWWwXEEMQgEAaFNw+E5/6fX
     });
 
     /* Correlation */
-    document.querySelector("#toggle-correlation-description")?.click(() => {
+    document.querySelector("#toggle-correlation-description")?.addEventListener('click', () => {
         document.querySelectorAll(".correlation-description").forEach(el => el.classList.toggle("d-none"));
 
         document.querySelectorAll(".tab-pane[id^=correlations_tab-]").forEach(el => {
